@@ -6,7 +6,7 @@ function MovieSearch() {
    const [error, setError] = useState(null);
 
    const handleSearch = async () => {
-      setError(null); // Очистить предыдущие ошибки
+      setError(null); 
       try {
          const response = await fetch(
             `https://www.omdbapi.com/?apikey=bb44bbd6&t=${encodeURIComponent(
